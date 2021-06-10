@@ -1,0 +1,8 @@
+gen/**
+genclient/**
+genserver/**
+telemazer/**
+download/**
+stage/**
+pa_location.py
+__pycache__/**

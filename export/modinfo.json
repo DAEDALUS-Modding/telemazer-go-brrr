@@ -1,0 +1,33 @@
+{
+	"identifier": "com.pa.daedelus.telemazer",
+	"display_name": "Telemazer go BRRR",
+	"description": "Commanders gain personal teleport and can build microwave lasers that follow their teleports. Compatible with Legion, Second Wave, and Section 17.",
+	"author": ["Team DAEDALUS, Quildtide"],
+	"authors": [
+		"Team DAEDALUS",
+		"Quildtide"
+	],
+	"signature": "not yet implemented",
+	"forum": "",
+	"priority": 90,
+	"icon": "",
+	"titansOnly": true,
+	"category": [
+		"addon",
+		"unit",
+		"expansion",
+		"titans"
+	],
+	"scenes": {
+		"shared_build": [
+			"coui://ui/mods/com.pa.daedalus.telemazer/shared_build.js"
+		],
+		"icon_atlas": [
+			"coui://ui/mods/com.pa.daedalus.telemazer/icon_atlas.js"
+		]
+	},
+	"context": "server",
+	"date": "2021-06-10",
+	"build": "115546",
+	"version": "0.0.1"
+}
