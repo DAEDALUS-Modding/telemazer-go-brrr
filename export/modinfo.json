@@ -2,7 +2,7 @@
 	"identifier": "com.pa.daedelus.telemazer",
 	"display_name": "Telemazer go BRRR",
 	"description": "Commanders gain personal teleport and can build microwave lasers that follow their teleports. Compatible with Legion, Second Wave, and Section 17.",
-	"author": ["Team DAEDALUS, Quildtide"],
+	"author": "Team DAEDALUS, Quildtide",
 	"signature": "not yet implemented",
 	"forum": "https://forums.planetaryannihilation.com/threads/server-telemazer-go-brrr.73585/",
 	"priority": 90,
@@ -23,7 +23,7 @@
 		]
 	},
 	"context": "server",
-	"date": "2022-05-23",
+	"date": "2022-05-24",
 	"build": "115673",
-	"version": "0.1.0"
+	"version": "0.1.1"
 }
