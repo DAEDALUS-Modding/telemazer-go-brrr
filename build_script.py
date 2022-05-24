@@ -5,22 +5,22 @@ import os.path
 import paeiou
 from pa_location import pa_location
 
-gen = "gen"
+gen = "telemazer-server"
 dl_path = "download"
 stage_path = "stage"
 
 mod_urls = {
-    "legion": "https://cdn.palobby.com/community-mods/downloads/com.pa.legion-expansion-server.zip"
+    "legion": "https://github.com/Legion-Expansion/com.pa.legion-expansion-server/archive/refs/heads/main.zip"
 }
 
 COMM_MASS_TELEPORTER = {
-    "radius": 50,
+    "radius": 30,
     "phasing_duration": 5,
     "phasing_health_frac": 0.5,
-    "fixup_radius": 50,
+    "fixup_radius": 30,
     "energy_drain": 10000,
     "energy_cost": 300000,
-    "unit_cap": 1,
+    "unit_cap": 5,
     "target_types": "CmdBuild & LaserPlatform"
 }
 
