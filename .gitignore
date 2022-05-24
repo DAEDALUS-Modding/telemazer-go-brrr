@@ -1,7 +1,7 @@
 gen/**
 genclient/**
 genserver/**
-telemazer/**
+telemazer=server/**
 download/**
 stage/**
 pa_location.py
