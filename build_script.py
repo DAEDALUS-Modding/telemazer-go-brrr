@@ -40,14 +40,6 @@ def gen_unit_shadows():
     spec["mass_teleporter"] = COMM_MASS_TELEPORTER
     write_new_spec(spec, filename)
 
-    filename = "pa/tools/uber_cannon/uber_cannon.json"
-    with open(os.path.join(stage_path, filename)) as file:
-        spec = json.load(file)
-    spec["rate_of_fire"] = spec.pop("ammo_demand") / spec.pop("ammo_per_shot")
-    spec.pop("ammo_capacity")
-    spec.pop("ammo_source")
-    write_new_spec(spec, filename)
-
 def main():
     if os.path.isdir(gen):
         shutil.rmtree(gen)
