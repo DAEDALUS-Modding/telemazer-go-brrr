@@ -2,7 +2,7 @@
     "base_spec": "/pa/units/land/base_structure/base_structure.json",
     "unit_name": "Microwave Laser Generator",
     "display_name": "!LOC:Microwave Laser Generator",
-    "description": "!LOC:Massive single-target damage. When the Commander uses Mass Teleport, up to 5 can travel with the Commander.",
+    "description": "!LOC:Massive single-target damage. When the Commander uses Mass Teleport, up to 5 within build range can travel with the Commander.",
     "max_health": 5000,
     "build_metal_cost": 30000,
     "atrophy_rate": 7.5,
