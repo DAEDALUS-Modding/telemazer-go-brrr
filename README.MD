@@ -10,12 +10,6 @@ Adds "Telemazer" snipes to Planetary Annihilation
     - They cannot act for 5 seconds as their health is restored to normal values.
 - Legion
 
-## Side Effects
-- Uber Cannon no longer uses an ammo bar, so it no longer costs energy.
-  - This means energy state does not affect the Uber Cannon
-  - This also means you can't see recharge progress on Uber Cannon
-  - This change is made because of an engine limitation; units with the Mass Teleport command cannot also have an ammo bar.
-
 ## Additional Implementation Details
 - The Commander's Mass Teleport can take any unit that has unit types that match `CmdBuild & LaserPlatform`
 
