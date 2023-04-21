@@ -3,7 +3,7 @@ import os
 import json
 import os.path
 import paeiou
-from pa_location import pa_location
+from pa_location import pa_location, mods_path
 
 gen = "telemazer-server"
 dl_path = "download"
@@ -39,6 +39,21 @@ def gen_unit_shadows():
     spec["buildable_types"] = "CmdBuild - Custom1 - Custom2 - Custom3 - Custom4"
     write_new_spec(spec, filename)
 
+def install_mod(mod_path):
+    install_path = os.path.join(mods_path, mod_path)
+    if os.path.isdir(install_path):
+        shutil.rmtree(install_path)
+
+    shutil.copytree(mod_path, install_path, dirs_exist_ok=True)
+
+    modinfo_path = os.path.join(install_path, "modinfo.json")
+    with open(modinfo_path, 'r') as modinfo_file:
+        info = json.load(modinfo_file)
+        info["identifier"] = info["identifier"] + "-dev"
+    
+    with open(modinfo_path, 'w') as modinfo_file:
+        json.dump(info, modinfo_file)
+
 def main():
     if os.path.isdir(gen):
         shutil.rmtree(gen)
@@ -55,6 +70,10 @@ def main():
         pa_path = pa_location
     )
     gen_unit_shadows()
+
+    shutil.make_archive("telemazer-server", "zip", gen)
+    install_mod(gen)
+
 
 if __name__ == '__main__':
     main()
