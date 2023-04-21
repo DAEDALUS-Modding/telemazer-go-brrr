@@ -8,7 +8,10 @@ Adds "Telemazer" snipes to Planetary Annihilation
     - Microwave Laser Generators must be within 30 radius (Commander green/fab range circle)
   - Mass Teleport sets the Commander and accompanying Microwave Laser Generators to 50% health
     - They cannot act for 5 seconds as their health is restored to normal values.
-- Legion
+
+
+## Side Effects
+- The Commander's Uber Cannon and Mass Teleport share an energy charging bar in the UI, which makes the Uber Cannon charging bar unreadable.
 
 ## Additional Implementation Details
 - The Commander's Mass Teleport can take any unit that has unit types that match `CmdBuild & LaserPlatform`
