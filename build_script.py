@@ -9,9 +9,7 @@ gen = "telemazer-server"
 dl_path = "download"
 stage_path = "stage"
 
-mod_urls = {
-    "legion": "https://github.com/Legion-Expansion/com.pa.legion-expansion-server/archive/refs/heads/main.zip"
-}
+mod_urls = {}
 
 COMM_MASS_TELEPORTER = {
     "radius": 30,
@@ -38,6 +36,7 @@ def gen_unit_shadows():
         spec = json.load(file)
     spec["command_caps"].append("ORDER_MassTeleport")
     spec["mass_teleporter"] = COMM_MASS_TELEPORTER
+    spec["buildable_types"] = "CmdBuild - Custom1 - Custom2 - Custom3 - Custom4"
     write_new_spec(spec, filename)
 
 def main():
