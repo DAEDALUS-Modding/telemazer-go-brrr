@@ -36,7 +36,6 @@ def gen_unit_shadows():
         spec = json.load(file)
     spec["command_caps"].append("ORDER_MassTeleport")
     spec["mass_teleporter"] = COMM_MASS_TELEPORTER
-    spec["buildable_types"] = "CmdBuild - Custom1 - Custom2 - Custom3 - Custom4"
     write_new_spec(spec, filename)
 
 def install_mod(mod_path):

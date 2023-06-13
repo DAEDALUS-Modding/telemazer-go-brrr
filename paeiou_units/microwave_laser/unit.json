@@ -16,7 +16,8 @@
         "UNITTYPE_LaserPlatform",
         "UNITTYPE_Defense",
         "UNITTYPE_SurfaceDefense",
-        "UNITTYPE_Important"
+        "UNITTYPE_Important",
+        "UNITTYPE_Custom58"
     ],
     "command_caps": [
         "ORDER_Attack"
