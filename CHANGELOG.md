@@ -1,3 +1,7 @@
+# v0.3.0
+- Updated unit shadows for patch 116982
+  - Support for Custom58
+
 # v0.2.0
 
 - No longer alters Uber Cannon functionality thanks to an engine fix in patch 116931.
